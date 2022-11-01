@@ -19,11 +19,20 @@ fetch('https://reqres.in/api/users?page=2', {
         createElm(user);
     }
 })
-const createElm = () => {
+const createElm = (user) => {
     document.getElementById('content').innerHTML += `
-       <h1>Hello there</h1>
-   
+
+    <figure class="container">
+    <img src="${user.avatar}">
+    <figcaption>
+    <h2>${user.first_name} ${user.last_name}</h2>
+    <p>${user.email}</p>
+    </figcaption>
+   </figure>
         `
+    
 }
+
+
 
 
