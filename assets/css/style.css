@@ -38,11 +38,13 @@ main {
   color: blue;
 }
 
+#content {
+  margin: 1em;
+}
 #content .container {
   display: grid;
   grid-template-columns: 10% 90%;
   gap: 1em;
-  margin: 1em;
 }
 #content .container img {
   width: 100%;
